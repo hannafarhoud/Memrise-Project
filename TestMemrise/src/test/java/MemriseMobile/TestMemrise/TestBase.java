@@ -1,45 +1,30 @@
 package MemriseMobile.TestMemrise;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 
-import io.appium.java_client.android.AndroidDriver;
+import java.net.URL;
 
 public class TestBase {
-//	protected AndroidDriver<WebElement> driver;
-	public static AndroidDriver<WebElement> driver;
-	private static String path = "http://127.0.0.1:4723/wd/hub";
 
-	@SuppressWarnings("deprecation")
-	@BeforeTest
-	public void setUp() throws MalformedURLException {
+	protected AndroidDriver<WebElement> driver;
 
-		DesiredCapabilities caps = new DesiredCapabilities();
-//		caps.setCapability("platformName", "Android");
-//		caps.setCapability("appium:deviceName", "---");
-//		caps.setCapability("appium:automationName", "UiAutomator2");
-//		caps.setCapability("appium:appPackage", "---");
-//		caps.setCapability("appium:appActivity", "---");
-//		caps.setCapability("noReset", true);
-//		caps.setCapability("fullReset", false);
+	@BeforeClass
+	public void setUp() throws Exception {
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("platformVersion", "14");
+		capabilities.setCapability("deviceName", "Pixel_7_Pro_API_34");
+		capabilities.setCapability("automationName", "UiAutomator2");
+		capabilities.setCapability("appPackage", "com.memrise.android.memrisecompanion");
+		capabilities.setCapability("appActivity", "com.memrise.android.memrisecompanion.ui.activity.LauncherActivity");
 
-		// this line here to handell allow popup
-		// caps.setCapability("autoGrantPermissions", true);
-
-		driver = new AndroidDriver<>(new URL(path), caps);
+		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723"), capabilities);
 	}
 
-	@AfterTest
-	public void tearDown() throws InterruptedException {
-		if (driver != null) {
-			Thread.sleep(3000);
-			driver.quit();
-		}
-	}
+	/*
+	 * @AfterClass public void tearDown() { if (driver != null) { driver.quit(); } }
+	 */
 }
