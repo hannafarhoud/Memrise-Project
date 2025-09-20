@@ -7,11 +7,13 @@ public class LanguagesTest extends TestBase {
 
 	private LoginPage authPage;
 	private LanguagesPage languagesPage;
+	private HomePage homePage;
 
 	@BeforeClass
 	public void init() {
 		authPage = new LoginPage(driver);
 		languagesPage = new LanguagesPage(driver);
+		homePage = new HomePage(driver);
 	}
 
 	@Test(priority = 1)
@@ -29,10 +31,16 @@ public class LanguagesTest extends TestBase {
 		languagesPage.addLanguageToLearn();
 		languagesPage.setUpTheNewLanguage();
 	}
-	
+
 	@Test(priority = 4)
 	public void testDeletLanguage() {
 		languagesPage.delteLanguage();
 	}
+   // Do not forget to remove this 
+	/*
+	 * @Test(priority = 5) public void testhome() { homePage.mywords();
+	 * 
+	 * }
+	 */
 
 }

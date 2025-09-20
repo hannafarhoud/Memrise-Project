@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MemriseMobile.TestMemrise.HomeTest">
+      <class name="MemriseMobile.TestMemrise.LanguagesTest">
         <methods>
-          <include name="init"/>
+          <include name="testAddLanguagesToLearn"/>
           <include name="setUp"/>
+          <include name="testChangeLearningLanguage"/>
+          <include name="init"/>
           <include name="testValidLogin"/>
-          <include name="testMywords"/>
+          <include name="testDeletLanguage"/>
+          <include name="testhome"/>
         </methods>
-      </class> <!-- MemriseMobile.TestMemrise.HomeTest -->
+      </class> <!-- MemriseMobile.TestMemrise.LanguagesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

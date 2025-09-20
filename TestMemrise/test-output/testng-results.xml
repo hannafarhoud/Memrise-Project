@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-19T21:55:01 EEST" name="Default suite" finished-at="2025-09-19T21:55:39 EEST" duration-ms="38581">
+  <suite started-at="2025-09-20T03:23:32 EEST" name="Default suite" finished-at="2025-09-20T03:24:02 EEST" duration-ms="30395">
     <groups>
     </groups>
-    <test started-at="2025-09-19T21:55:01 EEST" name="Default test" finished-at="2025-09-19T21:55:39 EEST" duration-ms="38581">
-      <class name="MemriseMobile.TestMemrise.HomeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:MemriseMobile.TestMemrise.HomeTest@1ce24091]" started-at="2025-09-19T21:55:01 EEST" name="setUp" finished-at="2025-09-19T21:55:39 EEST" duration-ms="38423" status="PASS">
+    <test started-at="2025-09-20T03:23:32 EEST" name="Default test" finished-at="2025-09-20T03:24:02 EEST" duration-ms="30395">
+      <class name="MemriseMobile.TestMemrise.LanguagesTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MemriseMobile.TestMemrise.LanguagesTest@24269709]" started-at="2025-09-20T03:23:32 EEST" name="setUp" finished-at="2025-09-20T03:24:02 EEST" duration-ms="30191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="init()[pri:0, instance:MemriseMobile.TestMemrise.HomeTest@1ce24091]" started-at="2025-09-19T21:55:39 EEST" name="init" finished-at="2025-09-19T21:55:39 EEST" duration-ms="22" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:MemriseMobile.TestMemrise.LanguagesTest@24269709]" started-at="2025-09-20T03:24:02 EEST" name="init" finished-at="2025-09-20T03:24:02 EEST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testValidLogin()[pri:1, instance:MemriseMobile.TestMemrise.HomeTest@1ce24091]" started-at="2025-09-19T21:55:39 EEST" name="testValidLogin" finished-at="2025-09-19T21:55:39 EEST" duration-ms="60" status="FAIL">
+        <test-method signature="testValidLogin()[pri:1, instance:MemriseMobile.TestMemrise.LanguagesTest@24269709]" started-at="2025-09-20T03:24:02 EEST" name="testValidLogin" finished-at="2025-09-20T03:24:02 EEST" duration-ms="48" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA['POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.41', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, deviceName: Pixel_7_Pro_API_34, platformName: android, platformVersion: 14}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 144, takesScreenshot: true, viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: d71819f0-d04a-4003-b30c-dfb3ef4d6b6b
+Session ID: da254388-8274-4ab0-ab82-a8ddcd306462
 *** Element info: {Using=id, value=com.memrise.android.memrisecompanion:id/already_have_an_account_button}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.41', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, deviceName: Pixel_7_Pro_API_34, platformName: android, platformVersion: 14}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 144, takesScreenshot: true, viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: d71819f0-d04a-4003-b30c-dfb3ef4d6b6b
+Session ID: da254388-8274-4ab0-ab82-a8ddcd306462
 *** Element info: {Using=id, value=com.memrise.android.memrisecompanion:id/already_have_an_account_button}
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -62,9 +62,9 @@ at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
 at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at MemriseMobile.TestMemrise.AuthPage.clickHaveAccount(AuthPage.java:27)
-at MemriseMobile.TestMemrise.AuthPage.loginWithEmail(AuthPage.java:48)
-at MemriseMobile.TestMemrise.HomeTest.testValidLogin(HomeTest.java:19)
+at MemriseMobile.TestMemrise.LoginPage.clickHaveAccount(LoginPage.java:24)
+at MemriseMobile.TestMemrise.LoginPage.loginWithEmail(LoginPage.java:44)
+at MemriseMobile.TestMemrise.LanguagesTest.testValidLogin(LanguagesTest.java:21)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -97,24 +97,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method signature="testMywords()[pri:2, instance:MemriseMobile.TestMemrise.HomeTest@1ce24091]" started-at="2025-09-19T21:55:39 EEST" name="testMywords" finished-at="2025-09-19T21:55:39 EEST" duration-ms="25" status="FAIL">
+        <test-method signature="testChangeLearningLanguage()[pri:2, instance:MemriseMobile.TestMemrise.LanguagesTest@24269709]" started-at="2025-09-20T03:24:02 EEST" name="testChangeLearningLanguage" finished-at="2025-09-20T03:24:02 EEST" duration-ms="24" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA['POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.41', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, deviceName: Pixel_7_Pro_API_34, platformName: android, platformVersion: 14}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 144, takesScreenshot: true, viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: d71819f0-d04a-4003-b30c-dfb3ef4d6b6b
+Session ID: da254388-8274-4ab0-ab82-a8ddcd306462
 *** Element info: {Using=accessibility id, value=Currently selected language: Arabic}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.41', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
 Driver info: io.appium.java_client.android.AndroidDriver
 Capabilities {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, deviceName: Pixel_7_Pro_API_34, platformName: android, platformVersion: 14}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 144, takesScreenshot: true, viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, warnings: {}, webStorageEnabled: false}
-Session ID: d71819f0-d04a-4003-b30c-dfb3ef4d6b6b
+Session ID: da254388-8274-4ab0-ab82-a8ddcd306462
 *** Element info: {Using=accessibility id, value=Currently selected language: Arabic}
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -141,9 +141,9 @@ at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
 at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-at MemriseMobile.TestMemrise.HomePage.navigateToFrench(HomePage.java:29)
-at MemriseMobile.TestMemrise.HomePage.mywords(HomePage.java:59)
-at MemriseMobile.TestMemrise.HomeTest.testMywords(HomeTest.java:24)
+at MemriseMobile.TestMemrise.LanguagesPage.openLanguageList(LanguagesPage.java:36)
+at MemriseMobile.TestMemrise.LanguagesPage.changeLanguageToFrench(LanguagesPage.java:47)
+at MemriseMobile.TestMemrise.LanguagesTest.testChangeLearningLanguage(LanguagesTest.java:26)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -175,8 +175,244 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMywords -->
-      </class> <!-- MemriseMobile.TestMemrise.HomeTest -->
+        </test-method> <!-- testChangeLearningLanguage -->
+        <test-method signature="testAddLanguagesToLearn()[pri:3, instance:MemriseMobile.TestMemrise.LanguagesTest@24269709]" started-at="2025-09-20T03:24:02 EEST" name="testAddLanguagesToLearn" finished-at="2025-09-20T03:24:02 EEST" duration-ms="20" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA['POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, deviceName: Pixel_7_Pro_API_34, platformName: android, platformVersion: 14}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 144, takesScreenshot: true, viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: da254388-8274-4ab0-ab82-a8ddcd306462
+*** Element info: {Using=accessibility id, value=Currently selected language: French}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, deviceName: Pixel_7_Pro_API_34, platformName: android, platformVersion: 14}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 144, takesScreenshot: true, viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: da254388-8274-4ab0-ab82-a8ddcd306462
+*** Element info: {Using=accessibility id, value=Currently selected language: French}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at MemriseMobile.TestMemrise.LanguagesPage.clickFrenchIcon(LanguagesPage.java:53)
+at MemriseMobile.TestMemrise.LanguagesPage.addLanguageToLearn(LanguagesPage.java:73)
+at MemriseMobile.TestMemrise.LanguagesTest.testAddLanguagesToLearn(LanguagesTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddLanguagesToLearn -->
+        <test-method signature="testDeletLanguage()[pri:4, instance:MemriseMobile.TestMemrise.LanguagesTest@24269709]" started-at="2025-09-20T03:24:02 EEST" name="testDeletLanguage" finished-at="2025-09-20T03:24:02 EEST" duration-ms="12" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA['POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, deviceName: Pixel_7_Pro_API_34, platformName: android, platformVersion: 14}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 144, takesScreenshot: true, viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: da254388-8274-4ab0-ab82-a8ddcd306462
+*** Element info: {Using=accessibility id, value=Currently selected language: German}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, deviceName: Pixel_7_Pro_API_34, platformName: android, platformVersion: 14}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 144, takesScreenshot: true, viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: da254388-8274-4ab0-ab82-a8ddcd306462
+*** Element info: {Using=accessibility id, value=Currently selected language: German}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at MemriseMobile.TestMemrise.LanguagesPage.delteLanguage(LanguagesPage.java:125)
+at MemriseMobile.TestMemrise.LanguagesTest.testDeletLanguage(LanguagesTest.java:37)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeletLanguage -->
+        <test-method signature="testhome()[pri:5, instance:MemriseMobile.TestMemrise.LanguagesTest@24269709]" started-at="2025-09-20T03:24:02 EEST" name="testhome" finished-at="2025-09-20T03:24:02 EEST" duration-ms="12" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA['POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, deviceName: Pixel_7_Pro_API_34, platformName: android, platformVersion: 14}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 144, takesScreenshot: true, viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: da254388-8274-4ab0-ab82-a8ddcd306462
+*** Element info: {Using=accessibility id, value=Currently selected language: Arabic}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.107', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.memrise.android.memrise..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, deviceName: Pixel_7_Pro_API_34, platformName: android, platformVersion: 14}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 560, deviceScreenSize: 1440x3120, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 144, takesScreenshot: true, viewportRect: {height: 2976, left: 0, top: 144, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: da254388-8274-4ab0-ab82-a8ddcd306462
+*** Element info: {Using=accessibility id, value=Currently selected language: Arabic}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at MemriseMobile.TestMemrise.HomePage.navigateToFrench(HomePage.java:29)
+at MemriseMobile.TestMemrise.HomePage.mywords(HomePage.java:59)
+at MemriseMobile.TestMemrise.LanguagesTest.testhome(LanguagesTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testhome -->
+      </class> <!-- MemriseMobile.TestMemrise.LanguagesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
