@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LanguagesPage {
-	
+
 	private AndroidDriver driver;
 	private By languageIcon = MobileBy.AccessibilityId("Currently selected language: Arabic");
 	private By frenchOption = By.xpath("//android.widget.TextView[@text='French']");

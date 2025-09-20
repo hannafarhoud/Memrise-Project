@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 
 import java.net.URL;
 
-public class TestBase {
+public class SetupLoginTest {
 
 	protected AndroidDriver<WebElement> driver;
 
@@ -16,25 +16,17 @@ public class TestBase {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("platformName", "Android");
 		capabilities.setCapability("platformVersion", "14");
-		// capabilities.setCapability("platformVersion", "13");
 
-		// capabilities.setCapability("deviceName", "Pixel_7_Pro_API_34");
 		capabilities.setCapability("deviceName", "emulator-5554");
 
 		capabilities.setCapability("automationName", "UiAutomator2");
-		capabilities.setCapability("appPackage", "com.memrise.android.memrisecompanion");
-		capabilities.setCapability("appActivity", "com.memrise.android.alexlanding.AlexLandingActivity");
 
-		// capabilities.setCapability("appPackage",
-		// "com.memrise.android.memrisecompanion");
-		// capabilities.setCapability("appActivity",
-		// "com.memrise.android.memrisecompanion.ui.activity.LauncherActivity");
-		capabilities.setCapability("noReset", true);
+		capabilities.setCapability("appPackage", "com.memrise.android.memrisecompanion");
+		capabilities.setCapability("appActivity", "com.memrise.android.memrisecompanion.ui.activity.LauncherActivity");
+
+		
 
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723"), capabilities);
 	}
 
-	/*
-	 * @AfterClass public void tearDown() { if (driver != null) { driver.quit(); } }
-	 */
 }

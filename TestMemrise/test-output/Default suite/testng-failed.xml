@@ -3,17 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="MemriseMobile.TestMemrise.LanguagesTest">
+      <class name="MemriseMobile.TestMemrise.HomeTest">
         <methods>
-          <include name="testAddLanguagesToLearn"/>
-          <include name="setUp"/>
-          <include name="testChangeLearningLanguage"/>
           <include name="init"/>
-          <include name="testValidLogin"/>
-          <include name="testDeletLanguage"/>
-          <include name="testhome"/>
+          <include name="setUp"/>
+          <include name="testMarkAsKnown"/>
+          <include name="testSortBy"/>
+          <include name="changeToArabic"/>
+          <include name="testViewJourney"/>
+          <include name="testViewMyActivitieslast30Days"/>
+          <include name="testunmarkAsKnown"/>
+          <include name="testhearThePronunciation"/>
+          <include name="testGetWordInformation"/>
+          <include name="testDisplayMyWords"/>
         </methods>
-      </class> <!-- MemriseMobile.TestMemrise.LanguagesTest -->
+      </class> <!-- MemriseMobile.TestMemrise.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
