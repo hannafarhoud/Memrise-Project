@@ -45,10 +45,9 @@ public class ConversationsPage {
 	public void writeOnConversation() {
 		wait = new WebDriverWait(driver, 10);
 		Set<String> contextHandles = driver.getContextHandles();
-	    // Loop through contexts to find the web view
 	    for (String context : contextHandles) {
 	        if (context.contains("WebView")) {
-	            driver.context(context); // Switch to the web view context
+	            driver.context(context);
 	            break;
 	        }
 	    }
