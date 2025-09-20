@@ -2,14 +2,13 @@ package MemriseMobile.TestMemrise;
 
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
-
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
+
 	private AndroidDriver<WebElement> driver;
 	private WebDriverWait wait;
 
@@ -51,22 +50,11 @@ public class LoginPage {
 	}
 
 	public void loginWithEmail(String email, String password) {
-		clickHaveAccount();
-		clickSignInWithEmail();
+
 		enterEmail(email);
 		enterPassword(password);
 		clickSignIn();
 	}
-
-	/*
-	 * public boolean handleErrorPopup() { WebDriverWait wait = new
-	 * WebDriverWait(driver, 5); WebElement okBtn =
-	 * wait.until(ExpectedConditions.visibilityOfElementLocated(passwordField));
-	 * okBtn.click();
-	 * 
-	 * 
-	 * }
-	 */
 
 	public boolean handleErrorPopupIfPresent() {
 		try {
@@ -85,33 +73,6 @@ public class LoginPage {
 		}
 		return false;
 	}
-
-	/*
-	 * public boolean handleErrorPopupIfPresent() { try { WebDriverWait shortWait =
-	 * new WebDriverWait(driver, 5); List<WebElement> buttons = shortWait
-	 * .until(ExpectedConditions.visibilityOfAllElementsLocatedBy(dismissPopup));
-	 * 
-	 * for (WebElement btn : buttons) { if (btn.isDisplayed() && btn.isEnabled()) {
-	 * btn.click(); return true; } } } catch (Exception e) { } return false; }
-	 */
-
-	/*
-	 * public boolean handleErrorPopupIfPresent() { try { WebDriverWait shortWait =
-	 * new WebDriverWait(driver, 5); List<WebElement> buttons = shortWait
-	 * .until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className(
-	 * "android.widget.Button")));
-	 * 
-	 * for (WebElement btn : buttons) { if (btn.isDisplayed() && btn.isEnabled()) {
-	 * btn.click(); clearFields(); return true; } } } catch (Exception e) {
-	 * 
-	 * } return false; }
-	 */
-
-	/*
-	 * public void handleErrorPopupIfPresent() { List<WebElement> buttons =
-	 * driver.findElements(dismissPopup); if (!buttons.isEmpty()) {
-	 * buttons.get(0).click(); clearFields(); } }
-	 */
 
 	public void clearFields() {
 		driver.findElement(emailField).clear();

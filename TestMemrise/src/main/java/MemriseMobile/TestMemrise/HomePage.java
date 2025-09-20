@@ -23,8 +23,6 @@ public class HomePage {
 	private By viewBtnLocator = By.xpath(
 			"//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[4]/android.view.View[2]/android.view.View[2]/android.widget.Button");
 	private By markAsKnownLocator = By.xpath("//android.widget.TextView[@text=\"Mark as known\"]");
-	// private By wordInformation = By.xpath("//android.widget.TextView[@text=\"Word
-	// information\"]");
 	private By backBtn = By.xpath(
 			"//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]");
 	private By journeyLocator = By.xpath("//android.widget.TextView[@text=\"Beginner\"]");
@@ -39,11 +37,12 @@ public class HomePage {
 	private By unmarkAsKnown = MobileBy.AndroidUIAutomator("new UiSelector().text(\"Unmark as known\")");
 	private By view2Locator = MobileBy
 			.AndroidUIAutomator("new UiSelector().className(\"android.widget.Button\").instance(3)");
-
 	private By frenchIconLocator = MobileBy.AccessibilityId("Currently selected language: French");
 	private By arabicLocator = MobileBy.AndroidUIAutomator("new UiSelector().text(\"Arabic\")");
 	private By backToHome = MobileBy
 			.AndroidUIAutomator("new UiSelector().className(\"android.view.View\").instance(2)");
+	private By myJourneyLocator = MobileBy
+			.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollForward()");
 
 	public HomePage(AndroidDriver driver) {
 		this.driver = driver;
@@ -81,7 +80,6 @@ public class HomePage {
 	}
 
 	public void markAsKnown() {
-
 		driver.findElement(viewBtnLocator).click();
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 
@@ -115,7 +113,6 @@ public class HomePage {
 	}
 
 	public void viewMyActivities() {
-
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement myActitvity = wait.until(ExpectedConditions.visibilityOfElementLocated(myActivitiesLocator));
 		myActitvity.click();
@@ -123,23 +120,18 @@ public class HomePage {
 		WebElement last30DaysBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(last30DaysLocator));
 		last30DaysBtn.click();
 
-		// Try to scroll here (Later)
 		driver.findElement(backFromActivities).click();
 
 	}
 
 	public void viewMyJourney() {
-
 		String journeyText = driver.findElement(journeyLocator).getText();
 		WebElement journey = driver
 				.findElement(MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true))"
 						+ ".scrollIntoView(new UiSelector().text(\"" + journeyText + "\"))"));
 
 		journey.click();
-
-		driver.findElement(
-				MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true)).scrollForward()"));
-
+		driver.findElement(myJourneyLocator);
 		driver.findElement(backToHome).click();
 
 	}

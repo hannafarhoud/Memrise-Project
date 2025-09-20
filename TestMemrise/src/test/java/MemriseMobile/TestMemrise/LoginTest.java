@@ -3,7 +3,6 @@ package MemriseMobile.TestMemrise;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.BeforeClass;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -44,65 +43,30 @@ public class LoginTest extends SetupLoginTest {
 		return data;
 	}
 
-	/*
-	 * @Test(dataProvider = "loginData") public void testLogin(String email, String
-	 * password) { authPage.loginWithEmail(email, password); boolean isError =
-	 * authPage.handleErrorPopupIfPresent();
-	 * 
-	 * if (!isError) { System.out.println("Login successful with: " + email + " / "
-	 * + password); } else { System.out.println("Login failed with: " + email +
-	 * " / " + password); } }
-	 */
-	
-	@Test(dataProvider = "loginData")
+	@Test(priority = 1)
+	public void testHaveAnAccount() {
+
+		authPage.clickHaveAccount();
+		authPage.clickSignInWithEmail();
+
+	}
+
+	@Test(dataProvider = "loginData", priority = 2)
 	public void testLogin(String email, String password) {
-	    authPage.loginWithEmail(email, password);
-	    boolean isError = authPage.handleErrorPopupIfPresent();
 
-	    if (isError) {
-	        authPage.loginWithEmail(email, password);
-	        isError = authPage.handleErrorPopupIfPresent();
-	    }
+		authPage.loginWithEmail(email, password);
+		boolean isError = authPage.handleErrorPopupIfPresent();
 
-	    if (!isError) {
-	        System.out.println("Login successful with: " + email + " / " + password);
-	    } else {
-	        System.out.println("Login failed with: " + email + " / " + password);
-	    }
+		if (isError) {
+			authPage.loginWithEmail(email, password);
+			isError = authPage.handleErrorPopupIfPresent();
+		}
+
+		if (!isError) {
+			System.out.println("Login successful with: " + email + " / " + password);
+		} else {
+			System.out.println("Login failed with: " + email + " / " + password);
+		}
 	}
 
 }
-
-/*
- * @Test(dataProvider = "loginData") public void testLogin(String email, String
- * password) { authPage.loginWithEmail(email, password);
- * 
- * boolean isError = authPage.handleErrorPopupIfPresent(); if (isError) {
- * authPage.loginWithEmail(email, password); } }
- * 
- */
-
-/*
- * @Test(dataProvider = "loginData", priority = 1) public void testLogin(String
- * email, String password) { authPage.loginWithEmail(email, password);
- * 
- * authPage.handleErrorPopupIfPresent();
- * 
- * }
- */
-
-/*
- * @DataProvider(name = "loginData") public Object[][] getLoginData() {
- * List<Object[]> data = new ArrayList<>(); String csvFilePath =
- * "src\\test\\java\\LoginData.csv";
- * 
- * try (BufferedReader bufferReader = new BufferedReader(new
- * FileReader(csvFilePath))) { String line; bufferReader.readLine(); while
- * ((line = bufferReader.readLine()) != null) { String[] values =
- * line.split(","); String email = values.length > 0 ? values[0].trim() : "";
- * String password = values.length > 1 ? values[1].trim() : ""; data.add(new
- * Object[] { email, password }); } } catch (IOException e) {
- * e.printStackTrace(); }
- * 
- * return data.toArray(new Object[0][]); }
- */

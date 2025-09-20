@@ -134,7 +134,6 @@ public class LanguagesPage {
 		WebElement deleteBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(deleteBtnLocator));
 		deleteBtn.click();
 
-		// Change To Arabic
 		WebElement arabic = wait.until(ExpectedConditions.visibilityOfElementLocated(arabicLoactor));
 		arabic.click();
 	}

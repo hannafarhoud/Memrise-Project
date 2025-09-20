@@ -7,15 +7,7 @@
         <methods>
           <include name="init"/>
           <include name="setUp"/>
-          <include name="testMarkAsKnown"/>
-          <include name="testSortBy"/>
-          <include name="changeToArabic"/>
-          <include name="testViewJourney"/>
-          <include name="testViewMyActivitieslast30Days"/>
           <include name="testunmarkAsKnown"/>
-          <include name="testhearThePronunciation"/>
-          <include name="testGetWordInformation"/>
-          <include name="testDisplayMyWords"/>
         </methods>
       </class> <!-- MemriseMobile.TestMemrise.HomeTest -->
     </classes>
