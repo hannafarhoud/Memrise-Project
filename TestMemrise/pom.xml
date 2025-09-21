@@ -14,45 +14,33 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
- <dependencies>
-		<!-- Appium Java Client
-         Provides the Appium APIs to write mobile automation scripts.
-         Without this, you can’t talk to real devices or emulators. -->
-		<dependency>
-			<groupId>io.appium</groupId>
-			<artifactId>java-client</artifactId>
-			<version>7.6.0</version>
-		</dependency>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.11.0</version>
+</dependency>
+<dependency>
+    <groupId>io.appium</groupId>
+    <artifactId>java-client</artifactId>
+    <version>7.6.0</version>
+</dependency>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>3.141.59</version>
+</dependency>
 
-		<!-- Apache Commons IO
-         Handy library for file operations like screenshots, logs, etc.
-         Often used with Appium + Selenium tests. -->
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.13.0</version>
-		</dependency>
-
-		<!-- Selenium Java
-         Core Selenium WebDriver libraries.
-         Appium is built on top of Selenium, so this is required
-         for driving the browser components and WebDriver API. -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
-		</dependency>
-
-
-		<!-- TestNG
-         The testing framework you’ll actually use for running tests.
-         Provides annotations like @Test, @BeforeTest, @AfterTest, etc.
-         Scope is 'test' because it’s only needed for test execution. -->
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.11.0</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
+  	<dependency>
+  		<groupId>MavenMai</groupId>
+  		<artifactId>Maven111</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>

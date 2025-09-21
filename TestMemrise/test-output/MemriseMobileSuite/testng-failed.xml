@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MemriseMobileSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AllTests(failed)">
+    <classes>
+      <class name="MemriseMobile.TestMemrise.HomeTest">
+        <methods>
+          <include name="init"/>
+          <include name="setUp"/>
+          <include name="testMywords"/>
+        </methods>
+      </class> <!-- MemriseMobile.TestMemrise.HomeTest -->
+      <class name="MemriseMobile.TestMemrise.LanguagesTest">
+        <methods>
+          <include name="testAddLanguagesToLearn"/>
+          <include name="setUp"/>
+          <include name="testChangeLearningLanguage"/>
+          <include name="init"/>
+          <include name="testDeletLanguage"/>
+        </methods>
+      </class> <!-- MemriseMobile.TestMemrise.LanguagesTest -->
+    </classes>
+  </test> <!-- AllTests(failed) -->
+</suite> <!-- Failed suite [MemriseMobileSuite] -->
