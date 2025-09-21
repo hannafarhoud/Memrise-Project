@@ -16,7 +16,7 @@ public class LessonsPage {
 
 	public LessonsPage(AndroidDriver<MobileElement> driver) {
 		this.driver = driver;
-		this.wait = new WebDriverWait(driver, 10); // old constructor for Selenium 3
+		this.wait = new WebDriverWait(driver, 10);
 	}
 
 	// locators
