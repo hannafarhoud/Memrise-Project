@@ -1,4 +1,4 @@
-package MemriseMobile.TestMemrise;
+package pages;
 
 import java.util.Set;
 

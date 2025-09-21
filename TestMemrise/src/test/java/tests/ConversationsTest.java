@@ -1,8 +1,10 @@
-package MemriseMobile.TestMemrise;
+package tests;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import pages.ConversationsPage;
 
 public class ConversationsTest extends TestBase {
 	ConversationsPage conversation;

@@ -1,4 +1,4 @@
-package MemriseMobile.TestMemrise;
+package tests;
 
 import java.net.MalformedURLException;
 import java.net.URL;

@@ -1,4 +1,4 @@
-package MemriseMobile.TestMemrise;
+package tests;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -6,6 +6,8 @@ import java.time.Instant;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import pages.AIBuddiesPage;
 
 public class AIBuddiesTest extends TestBase{
 	AIBuddiesPage buddies;
