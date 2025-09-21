@@ -10,7 +10,7 @@ import java.net.URL;
 
 public class TestBase {
 
-	protected AndroidDriver<WebElement> driver;
+	protected AndroidDriver<MobileElement> driver;
 
 	@BeforeClass
 	public void setUp() throws Exception {
