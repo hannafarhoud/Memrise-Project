@@ -1,6 +1,9 @@
-package MemriseMobile.TestMemrise;
+package tests;
 
 import org.testng.annotations.Test;
+
+import pages.LoginPage;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.BeforeClass;
 import java.io.BufferedReader;

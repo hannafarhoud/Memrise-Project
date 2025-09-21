@@ -1,7 +1,9 @@
-package MemriseMobile.TestMemrise;
+package tests;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import pages.LanguagesPage;
 
 public class LanguagesTest extends TestBase {
 

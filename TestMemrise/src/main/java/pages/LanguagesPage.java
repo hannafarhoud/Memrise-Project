@@ -1,4 +1,4 @@
-package MemriseMobile.TestMemrise;
+package pages;
 
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;

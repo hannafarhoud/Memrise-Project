@@ -1,13 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
-<suite name="MemriseMobileSuite" verbose="1">
-    
-    <test name="AllTests">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Memrise Suite" verbose="1">
+    <test name="Memrise Tests">
         <classes>
-            <class name="MemriseMobile.TestMemrise.LanguagesTest"/>
-            <class name="MemriseMobile.TestMemrise.HomeTest"/>
+            <class name="tests.LoginTest"/>
+            <class name="tests.LanguagesTest"/>
+            <class name="tests.HomeTest"/>
         </classes>
     </test>
-
 </suite>
