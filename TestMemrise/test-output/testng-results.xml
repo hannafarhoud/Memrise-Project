@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-21T00:58:20 EEST" name="Default suite" finished-at="2025-09-21T00:59:30 EEST" duration-ms="69184">
+    <groups>
+    </groups>
+    <test started-at="2025-09-21T00:58:20 EEST" name="Default test" finished-at="2025-09-21T00:59:30 EEST" duration-ms="69184">
+      <class name="MemriseMobile.TestMemrise.HomeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:MemriseMobile.TestMemrise.HomeTest@2a5c8d3f]" started-at="2025-09-21T00:58:21 EEST" name="setUp" finished-at="2025-09-21T00:58:38 EEST" duration-ms="17439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="init()[pri:0, instance:MemriseMobile.TestMemrise.HomeTest@2a5c8d3f]" started-at="2025-09-21T00:58:38 EEST" name="init" finished-at="2025-09-21T00:58:38 EEST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="testDisplayMyWords()[pri:1, instance:MemriseMobile.TestMemrise.HomeTest@2a5c8d3f]" started-at="2025-09-21T00:58:38 EEST" name="testDisplayMyWords" finished-at="2025-09-21T00:58:45 EEST" duration-ms="6827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDisplayMyWords -->
+        <test-method signature="testSortBy()[pri:2, instance:MemriseMobile.TestMemrise.HomeTest@2a5c8d3f]" started-at="2025-09-21T00:58:45 EEST" name="testSortBy" finished-at="2025-09-21T00:58:50 EEST" duration-ms="5277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortBy -->
+        <test-method signature="testhearThePronunciation()[pri:3, instance:MemriseMobile.TestMemrise.HomeTest@2a5c8d3f]" started-at="2025-09-21T00:58:50 EEST" name="testhearThePronunciation" finished-at="2025-09-21T00:58:51 EEST" duration-ms="1020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testhearThePronunciation -->
+        <test-method signature="testMarkAsKnown()[pri:4, instance:MemriseMobile.TestMemrise.HomeTest@2a5c8d3f]" started-at="2025-09-21T00:58:51 EEST" name="testMarkAsKnown" finished-at="2025-09-21T00:58:53 EEST" duration-ms="2239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkAsKnown -->
+        <test-method signature="testunmarkAsKnown()[pri:5, instance:MemriseMobile.TestMemrise.HomeTest@2a5c8d3f]" started-at="2025-09-21T00:58:53 EEST" name="testunmarkAsKnown" finished-at="2025-09-21T00:59:05 EEST" duration-ms="11351" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.AndroidUIAutomator: new UiSelector().text("Unmark as known") (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.AndroidUIAutomator: new UiSelector().text("Unmark as known") (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at MemriseMobile.TestMemrise.HomePage.unmarkAsKnown(HomePage.java:99)
+at MemriseMobile.TestMemrise.HomeTest.testunmarkAsKnown(HomeTest.java:42)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-46VVE2N', ip: '192.168.1.41', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.memrise.android.alexlan..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.memrise.android.alexlan..., appPackage: com.memrise.android.memrise..., automationName: UiAutomator2, deviceName: emulator-5554, noReset: true, platformName: android, platformVersion: 14}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x2400, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 136, takesScreenshot: true, viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: bb2dd226-1d87-4b9e-88df-c3efa5265171
+*** Element info: {Using=-android uiautomator, value=new UiSelector().text("Unmark as known")}
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+at io.appium.java_client.MobileBy$ByAndroidUIAutomator.findElement(MobileBy.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testunmarkAsKnown -->
+        <test-method signature="testGetWordInformation()[pri:6, instance:MemriseMobile.TestMemrise.HomeTest@2a5c8d3f]" started-at="2025-09-21T00:59:05 EEST" name="testGetWordInformation" finished-at="2025-09-21T00:59:12 EEST" duration-ms="7647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetWordInformation -->
+        <test-method signature="testViewMyActivitieslast30Days()[pri:7, instance:MemriseMobile.TestMemrise.HomeTest@2a5c8d3f]" started-at="2025-09-21T00:59:12 EEST" name="testViewMyActivitieslast30Days" finished-at="2025-09-21T00:59:18 EEST" duration-ms="5180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewMyActivitieslast30Days -->
+        <test-method signature="testViewJourney()[pri:8, instance:MemriseMobile.TestMemrise.HomeTest@2a5c8d3f]" started-at="2025-09-21T00:59:18 EEST" name="testViewJourney" finished-at="2025-09-21T00:59:26 EEST" duration-ms="8243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewJourney -->
+        <test-method signature="changeToArabic()[pri:9, instance:MemriseMobile.TestMemrise.HomeTest@2a5c8d3f]" started-at="2025-09-21T00:59:26 EEST" name="changeToArabic" finished-at="2025-09-21T00:59:30 EEST" duration-ms="3850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeToArabic -->
+      </class> <!-- MemriseMobile.TestMemrise.HomeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
