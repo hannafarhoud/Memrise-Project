@@ -5,11 +5,11 @@
             <class name="tests.LoginTest"/>
             <class name="tests.LanguagesTest"/>
             <class name="tests.HomeTest"/>
-            <class name="tests.AIBuddiesTest"/>
-            <class name="tests.ConversationsTest"/>
             <class name="tests.LessonsTest"/>
-            <class name="tests.LogoutTest"/>
             <class name="tests.VideosTest"/>
+            <class name="tests.ConversationsTest"/>
+            <class name="tests.AIBuddiesTest"/>
+            <class name="tests.LogoutTest"/>
         </classes>
     </test>
 </suite>
