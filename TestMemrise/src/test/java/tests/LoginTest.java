@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LoginTest extends SetupLoginTest {
+public class LoginTest extends TestBase {
 
 	private LoginPage authPage;
 
