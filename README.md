@@ -53,13 +53,13 @@ We tested the **[DemoQA](https://demoqa.com/)** website by simulating multiple u
 
 ## 📅 Project Week Workflow  
 
-The project duration is **3 days**, with **preparation starting from Day 1** of this course.  
+The project duration is **1 week**, with **preparation starting from Day 1** of this course.  
 QAs work in **groups of 4**, following **Scrum methodology**.  
 
 ### 🌀 Scrum Meetings  
-- **Sprint Planning (Day 1, 2 hrs)** → Understand requirements, analyze, and assign tasks  
+- **Sprint Planning** → Understand requirements, analyze, and assign tasks  
 - **Daily Scrum (10 mins/day)** → Share progress, next tasks, and blockers  
-- **Sprint Review (Day 3, 1 hr)** → Teams present projects, receive feedback  
+- **Sprint Review (2 hrs)** → Teams present projects, receive feedback
 
 ---
 
@@ -86,23 +86,6 @@ QAs work in **groups of 4**, following **Scrum methodology**.
   - Traceability Matrix  
 - Use **JMeter** (with Listeners, Timers, Reports, Response Actions)  
 - Use **JSON Extractor** if needed  
-
----
-
-## 🚀 Project Phases  
-
-### Phase 1 – Preparation  
-| Day | Stage | Goals & Deliverables |
-|-----|-------|-----------------------|
-| Day 1 (Mobile Test Week) | Mobile Test | - Select Memrise app workflows <br> - SRS Document <br> - Manual Test Docs |
-| Day 1 (Performance Test Week) | Performance Test | - Select DemoQA workflows <br> - SRS Document <br> - Manual Test Docs |
-
-### Phase 2 – Implementation  
-| Day | Stage | Goals & Deliverables |
-|-----|-------|-----------------------|
-| Day 1 | Mobile Test | Build automation with Appium |
-| Day 2 | Performance Test | Build Test Plan with JMeter |
-| Day 3 | Presentation | 30-min presentation of deliverables |
 
 ---
 
