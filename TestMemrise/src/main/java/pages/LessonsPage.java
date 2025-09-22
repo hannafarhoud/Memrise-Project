@@ -19,7 +19,6 @@ public class LessonsPage {
 		this.wait = new WebDriverWait(driver, 10);
 	}
 
-	// locators
 	private By myLessonPage = MobileBy.AccessibilityId("My Lessons");
 	private By myLessonPageDisplayed = MobileBy
 			.AndroidUIAutomator("new UiSelector().className(\"android.view.View\").instance(3)");
@@ -39,7 +38,7 @@ public class LessonsPage {
 			.AndroidUIAutomator("new UiSelector().text(\"Learn words with locals\").instance(2)");
 	private By anotherGroupLevelDisplayed = MobileBy.AndroidUIAutomator("new UiSelector().text(\"ABOUT THIS LESSON\")");
 
-	// Functions
+	
 	public boolean openMyLessonsPage() {
 		MobileElement element = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(myLessonPage));
 		element.click();
