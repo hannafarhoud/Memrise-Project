@@ -20,7 +20,6 @@ public class VideosPage {
 		this.wait = new WebDriverWait(driver, 10);
 	}
 
-	// locators
 	private By openVideosPage = MobileBy.AccessibilityId("Videos");
 	private By openVideosPageDisplayed = MobileBy.AndroidUIAutomator("new UiSelector().text(\"Unwatched\")");
 
@@ -50,7 +49,7 @@ public class VideosPage {
 	private By practiceWordsDisplayed = MobileBy
 			.AndroidUIAutomator("new UiSelector().className(\"android.view.View\").instance(1)");
 
-	// Functions
+	
 	public boolean openVideosPage() {
 		MobileElement element = (MobileElement) wait.until(ExpectedConditions.elementToBeClickable(openVideosPage));
 		element.click();
