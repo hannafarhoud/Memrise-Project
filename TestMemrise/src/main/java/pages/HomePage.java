@@ -11,6 +11,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class HomePage {
 
 	private AndroidDriver driver;
+	private WebDriverWait wait;
 
 	private By arabicIconLocator = MobileBy.AccessibilityId("Currently selected language: Arabic");
 	private By frenchLocator = By.xpath("//android.widget.TextView[@text=\"French\"]");
@@ -46,10 +47,10 @@ public class HomePage {
 
 	public HomePage(AndroidDriver driver) {
 		this.driver = driver;
+		this.wait = new WebDriverWait(driver, 10);
 	}
 
 	public void navigateToFrench() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement arabicIcon = wait.until(ExpectedConditions.visibilityOfElementLocated(arabicIconLocator));
 		arabicIcon.click();
 
@@ -59,13 +60,11 @@ public class HomePage {
 	}
 
 	public void naviageToMyWords() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement mywords = wait.until(ExpectedConditions.visibilityOfElementLocated(mywordsLocator));
 		mywords.click();
 	}
 
 	public void sortWordsBy() {
-		WebDriverWait wait = new WebDriverWait(driver, 15);
 		WebElement sortBy = wait.until(ExpectedConditions.visibilityOfElementLocated(sortByLocator));
 		sortBy.click();
 
@@ -74,21 +73,17 @@ public class HomePage {
 	}
 
 	public void hearThePronunciation() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement listenIcon = wait.until(ExpectedConditions.visibilityOfElementLocated(listenIconLocator));
 		listenIcon.click();
 	}
 
 	public void markAsKnown() {
 		driver.findElement(viewBtnLocator).click();
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-
 		WebElement markAsKnown = wait.until(ExpectedConditions.visibilityOfElementLocated(markAsKnownLocator));
 		markAsKnown.click();
 	}
 
 	public void unmarkAsKnown() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement viewMenu = wait.until(ExpectedConditions.visibilityOfElementLocated(view2Locator));
 		viewMenu.click();
 
@@ -98,7 +93,6 @@ public class HomePage {
 	}
 
 	public void getWordInformation() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement menuBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(menuBtnLocator));
 		menuBtn.click();
 
@@ -113,7 +107,6 @@ public class HomePage {
 	}
 
 	public void viewMyActivities() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement myActitvity = wait.until(ExpectedConditions.visibilityOfElementLocated(myActivitiesLocator));
 		myActitvity.click();
 
@@ -137,7 +130,6 @@ public class HomePage {
 	}
 
 	public void changeToArabic() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement french = wait.until(ExpectedConditions.visibilityOfElementLocated(frenchIconLocator));
 		french.click();
 
