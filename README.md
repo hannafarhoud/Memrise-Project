@@ -54,7 +54,7 @@ We tested the **[DemoQA](https://demoqa.com/)** website by simulating multiple u
 ## 📅 Project Week Workflow  
 
 The project duration is **1 week**, with **preparation starting from Day 1** of this course.  
-QAs work in **groups of 4**, following **Scrum methodology**.  
+QAs work in **groups of 3**, following **Scrum methodology**.  
 
 ### 🌀 Scrum Meetings  
 - **Sprint Planning** → Understand requirements, analyze, and assign tasks  
