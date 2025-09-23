@@ -20,6 +20,7 @@ public class ConversationsTest extends TestBase {
   @Test (priority = 2)
   public void selectConversation() {
 	  conversation.clickOnConversation();
+	  Assert.assertTrue(conversation.isConversationDisplayed(), "Conversation should start!");
 	  
   }
   
