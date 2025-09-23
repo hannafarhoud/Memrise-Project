@@ -20,6 +20,7 @@ public class ConversationsPage {
 	private By writeConversation = MobileBy.className("android.widget.EditText");
 	private By sendButton = MobileBy.AndroidUIAutomator("new UiSelector().className(\"android.widget.Image\").instance(5)");
 	private By micButton = MobileBy.AndroidUIAutomator("new UiSelector().className(\"android.widget.Image\").instance(4)");
+	private By conversationBegin = MobileBy.className("android.webkit.WebView");
 
 	public ConversationsPage(AndroidDriver<MobileElement> driver) {
 		this.driver = driver;
@@ -39,6 +40,11 @@ public class ConversationsPage {
 	public void clickOnConversation() {
 		wait.until(ExpectedConditions.elementToBeClickable(selectConversation)).click();
 		wait.until(ExpectedConditions.elementToBeClickable(startConversation)).click();
+		
+	}
+
+	public boolean isConversationDisplayed() {
+		return driver.findElement(conversationBegin).isDisplayed();
 		
 	}
 	
