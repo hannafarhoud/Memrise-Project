@@ -19,6 +19,7 @@ public class LogoutPage {
 	private By userSetting = MobileBy.AndroidUIAutomator("new UiSelector().className(\"android.widget.Button\").instance(3)");
 	private By signOutUser = MobileBy.AndroidUIAutomator("new UiSelector().text(\"Sign out\")");
 	private By yesSignOut = MobileBy.id("android:id/button1");
+	private By haveAccountBtn = By.id("com.memrise.android.memrisecompanion:id/already_have_an_account_button");
 	
 	public LogoutPage(AndroidDriver<MobileElement> driver) {
 		this.driver = driver;
@@ -32,6 +33,15 @@ public class LogoutPage {
 		wait.until(ExpectedConditions.elementToBeClickable(yesSignOut)).click();
 		
 	}
+
+	public boolean isLoginScreenDisplayed() {
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(haveAccountBtn));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 	
 	public void scrollDown(int numberOfScrolls) {
         Dimension size = driver.manage().window().getSize();
