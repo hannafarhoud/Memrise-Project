@@ -1,5 +1,6 @@
-package pages;
+package MemriseMobile.TestMemrise;
 
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.WebElement;
 import java.util.List;
@@ -12,7 +13,7 @@ public class LoginPage {
 	private AndroidDriver<WebElement> driver;
 	private WebDriverWait wait;
 
-	private By haveAccountBtn = By.xpath("//android.widget.TextView[@text=\"I have an account\"]");
+	private By haveAccountBtn = MobileBy.AndroidUIAutomator("new UiSelector().text(\"I have an account\")");
 	private By signInWithEmailBtn = By.id("com.memrise.android.memrisecompanion:id/onboardingEmailView");
 	private By emailField = By.id("com.memrise.android.memrisecompanion:id/onboarding_email_field");
 	private By passwordField = By.id("com.memrise.android.memrisecompanion:id/onboarding_password_field");
@@ -25,6 +26,7 @@ public class LoginPage {
 	}
 
 	public void clickHaveAccount() {
+
 		WebElement haveAccount = wait.until(ExpectedConditions.elementToBeClickable(haveAccountBtn));
 		haveAccount.click();
 	}
@@ -57,26 +59,27 @@ public class LoginPage {
 	}
 
 	public boolean handleErrorPopupIfPresent() {
-		try {
-			WebDriverWait shortWait = new WebDriverWait(driver, 5);
-			List<WebElement> buttons = shortWait
-					.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(dismissPopup));
+		WebDriverWait shortWait = new WebDriverWait(driver, 5);
+		List<WebElement> buttons = shortWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(dismissPopup));
 
-			for (WebElement btn : buttons) {
-				if (btn.isDisplayed() && btn.isEnabled()) {
-					btn.click();
-					clearFields();
-					return true;
-				}
+		for (WebElement btn : buttons) {
+			if (btn.isDisplayed() && btn.isEnabled()) {
+				btn.click();
+				clearFields();
+				return true;
 			}
-		} catch (Exception e) {
 		}
 		return false;
+
 	}
 
 	public void clearFields() {
 		driver.findElement(emailField).clear();
 		driver.findElement(passwordField).clear();
+	}
+
+	public By getEmailField() {
+		return emailField;
 	}
 
 }
