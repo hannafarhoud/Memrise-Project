@@ -1,10 +1,12 @@
-package tests;
+package MemriseMobile.TestMemrise;
 
 import org.testng.annotations.Test;
-
-import pages.LoginPage;
-
 import org.testng.annotations.DataProvider;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -12,7 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LoginTest extends TestBase {
+public class LoginTest extends SetupLoginTest {
 
 	private LoginPage authPage;
 
@@ -47,16 +49,20 @@ public class LoginTest extends TestBase {
 	}
 
 	@Test(priority = 1)
-	public void testHaveAnAccount() {
+	public void testHaveAnAccount() throws InterruptedException {
 
 		authPage.clickHaveAccount();
 		authPage.clickSignInWithEmail();
+
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebElement emailField = wait.until(ExpectedConditions
+				.visibilityOfElementLocated(By.id("com.memrise.android.memrisecompanion:id/onboarding_email_field")));
+		Assert.assertTrue(emailField.isDisplayed());
 
 	}
 
 	@Test(dataProvider = "loginData", priority = 2)
 	public void testLogin(String email, String password) {
-
 		authPage.loginWithEmail(email, password);
 		boolean isError = authPage.handleErrorPopupIfPresent();
 
@@ -66,7 +72,7 @@ public class LoginTest extends TestBase {
 		}
 
 		if (!isError) {
-			System.out.println("Login successful with: " + email + " / " + password);
+			System.out.println("Login with: " + email + " / " + password);
 		} else {
 			System.out.println("Login failed with: " + email + " / " + password);
 		}
