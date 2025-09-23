@@ -11,6 +11,7 @@ public class LogoutTest extends TestBase {
   @Test
   public void userLogout() {
 	  logout.logOutUser();
+	  Assert.assertTrue(logout.isLoginScreenDisplayed(), "User was not successfully logged out");
 	  
   }
   
