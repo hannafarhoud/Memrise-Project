@@ -1,4 +1,4 @@
-package pages;
+package MemriseMobile.TestMemrise;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,29 +11,45 @@ import io.appium.java_client.android.AndroidDriver;
 public class HomePage {
 
 	private AndroidDriver driver;
+	private WebDriverWait wait;
 
 	private By arabicIconLocator = MobileBy.AccessibilityId("Currently selected language: Arabic");
-	private By frenchLocator = By.xpath("//android.widget.TextView[@text=\"French\"]");
-	private By mywordsLocator = By.xpath("//android.widget.TextView[@text=\"My words (75)\"]");
-	private By sortByLocator = By.xpath(
-			"//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[3]/android.view.View");
-	private By sortByEngLocator = By.xpath("(//android.widget.TextView[@text=\"English (US)\"])[1]");
-	private By listenIconLocator = By.xpath(
-			"//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[4]/android.view.View[1]/android.view.View[1]/android.widget.Button");
-	private By viewBtnLocator = By.xpath(
-			"//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[4]/android.view.View[2]/android.view.View[2]/android.widget.Button");
-	private By markAsKnownLocator = By.xpath("//android.widget.TextView[@text=\"Mark as known\"]");
-	private By backBtn = By.xpath(
-			"//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]");
-	private By journeyLocator = By.xpath("//android.widget.TextView[@text=\"Beginner\"]");
-	private By menuBtnLocator = By.xpath(
-			"//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[4]/android.view.View[3]/android.view.View[2]/android.widget.Button");
-	private By wordInformationLocator = By.xpath("//android.widget.TextView[@text=\"Word information\"]");
-	private By backLocator = By.xpath("//android.widget.ScrollView/android.view.View[1]");
-	private By myActivitiesLocator = By.xpath("//android.widget.TextView[@text=\"My Activities\"]");
-	private By last30DaysLocator = By.xpath("//android.widget.TextView[@text=\"Last 30 days\"]");
-	private By backFromActivities = By.xpath(
-			"//androidx.compose.ui.platform.ComposeView/android.view.View/android.view.View/android.view.View[1]");
+
+	private By frenchLocator = MobileBy.AndroidUIAutomator("new UiSelector().text(\"French\")");
+
+	private By mywordsLocator = MobileBy.AndroidUIAutomator("new UiSelector().text(\"My words (75)\")");
+
+	private By sortByLocator = MobileBy
+			.AndroidUIAutomator("new UiSelector().className(\"android.view.View\").instance(5)");
+
+	private By sortByEngLocator = MobileBy.AndroidUIAutomator("new UiSelector().text(\"English (US)\").instance(0)");
+
+	private By listenIconLocator = MobileBy
+			.AndroidUIAutomator("new UiSelector().className(\"android.widget.Button\").instance(0)");
+
+	private By viewBtnLocator = MobileBy
+			.AndroidUIAutomator("new UiSelector().className(\"android.widget.Button\").instance(3)");
+
+	private By markAsKnownLocator = MobileBy.AndroidUIAutomator("//android.widget.TextView[@text=\"Mark as known\"]");
+
+	private By backBtn = MobileBy.AndroidUIAutomator("new UiSelector().className(\"android.view.View\").instance(2)");
+	private By journeyLocator = MobileBy.AndroidUIAutomator("new UiSelector().text(\"My Journey\")");
+
+	private By menuBtnLocator = MobileBy
+			.AndroidUIAutomator("new UiSelector().className(\"android.widget.Button\").instance(5)");
+
+	private By wordInformationLocator = MobileBy.AndroidUIAutomator("new UiSelector().text(\"Word information\")");
+
+	private By backLocator = MobileBy
+			.AndroidUIAutomator("new UiSelector().className(\"android.view.View\").instance(2)");
+
+	private By myActivitiesLocator = MobileBy
+			.AndroidUIAutomator("new UiSelector().className(\"android.view.View\").instance(2)");
+
+	private By last30DaysLocator = MobileBy.AndroidUIAutomator("new UiSelector().text(\"Last 30 days\")");
+
+	private By backFromActivities = MobileBy
+			.AndroidUIAutomator("new UiSelector().className(\"android.view.View\").instance(2)");
 	private By unmarkAsKnown = MobileBy.AndroidUIAutomator("new UiSelector().text(\"Unmark as known\")");
 	private By view2Locator = MobileBy
 			.AndroidUIAutomator("new UiSelector().className(\"android.widget.Button\").instance(3)");
@@ -46,10 +62,11 @@ public class HomePage {
 
 	public HomePage(AndroidDriver driver) {
 		this.driver = driver;
+		this.wait = new WebDriverWait(driver, 10);
+
 	}
 
 	public void navigateToFrench() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement arabicIcon = wait.until(ExpectedConditions.visibilityOfElementLocated(arabicIconLocator));
 		arabicIcon.click();
 
@@ -59,13 +76,11 @@ public class HomePage {
 	}
 
 	public void naviageToMyWords() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement mywords = wait.until(ExpectedConditions.visibilityOfElementLocated(mywordsLocator));
 		mywords.click();
 	}
 
 	public void sortWordsBy() {
-		WebDriverWait wait = new WebDriverWait(driver, 15);
 		WebElement sortBy = wait.until(ExpectedConditions.visibilityOfElementLocated(sortByLocator));
 		sortBy.click();
 
@@ -74,7 +89,6 @@ public class HomePage {
 	}
 
 	public void hearThePronunciation() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement listenIcon = wait.until(ExpectedConditions.visibilityOfElementLocated(listenIconLocator));
 		listenIcon.click();
 	}
@@ -88,7 +102,6 @@ public class HomePage {
 	}
 
 	public void unmarkAsKnown() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement viewMenu = wait.until(ExpectedConditions.visibilityOfElementLocated(view2Locator));
 		viewMenu.click();
 
@@ -98,7 +111,6 @@ public class HomePage {
 	}
 
 	public void getWordInformation() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement menuBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(menuBtnLocator));
 		menuBtn.click();
 
@@ -113,7 +125,6 @@ public class HomePage {
 	}
 
 	public void viewMyActivities() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement myActitvity = wait.until(ExpectedConditions.visibilityOfElementLocated(myActivitiesLocator));
 		myActitvity.click();
 
@@ -137,13 +148,48 @@ public class HomePage {
 	}
 
 	public void changeToArabic() {
-		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement french = wait.until(ExpectedConditions.visibilityOfElementLocated(frenchIconLocator));
 		french.click();
 
 		WebElement arabicBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(arabicLocator));
 		arabicBtn.click();
 
+	}
+
+	public By getMyWordsLocator() {
+		return mywordsLocator;
+	}
+
+	public By getSortByEngLocator() {
+		return sortByEngLocator;
+	}
+
+	public By getListenIconLocator() {
+		return listenIconLocator;
+	}
+
+	public By getUnmarkAsKnownLocator() {
+		return unmarkAsKnown;
+	}
+
+	public By getMarkAsKnownLocator() {
+		return markAsKnownLocator;
+	}
+
+	public By getWordInformationLocator() {
+		return wordInformationLocator;
+	}
+
+	public By getLast30DaysLocator() {
+		return last30DaysLocator;
+	}
+
+	public By getJourneyLocator() {
+		return journeyLocator;
+	}
+
+	public By getArabicLocator() {
+		return arabicLocator;
 	}
 
 }
